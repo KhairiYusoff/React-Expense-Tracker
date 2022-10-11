@@ -12,7 +12,7 @@ const Modalchild = (props) => {
             border: "1px solid black",
             background: "gray"
         }}>
-            <button style={{ background: "white", width: "15%", cursor: "pointer" }} onClick={() => props.onClose}>CLOSE</button>
+            <button style={{ background: "white", width: "15%", cursor: "pointer" }} onClick={props.onClose}>CLOSE</button>
             <h1 style={{ textAlign: "center" }}>MODAL</h1>
             <label htmlFor="">Your Name:</label>
             <input style={{ marginTop: "20px" }} type="text" placeholder='fullname' />
