@@ -1,0 +1,47 @@
+.myDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin: 0 auto;
+    width: 1000px;
+    margin-top: 200px;
+    border: 1px solid black;
+    background: gray;
+}
+
+.myButton { 
+    background: white;
+    width: 15%;
+    cursor: pointer;
+}
+
+.myHeading{ 
+    text-align: center;
+ }
+
+ .myInput{ 
+    margin-top: 20px;
+}
+ 
+.my-label{
+    font-size: 15px;
+    color: aqua;
+    font-weight: 600;
+}
+
+.my-label.invalid{
+    font-size: 15px;
+    color: darkorange;
+    font-weight: 600;
+}
+
+@media (max-width:600px) {
+
+    .myDiv{
+        width: 500px;
+    }
+
+    .myHeading{ 
+        display: none;
+     }
+}
