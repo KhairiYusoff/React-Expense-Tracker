@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses';
 import Modal from './components/Modal/Modal';
+import Useeffect from './components/Modal/Useeffect'
 
 const DUMMY_EXPENSES = [
   {
@@ -48,7 +49,7 @@ const App = () => {
 
   return (
     <div>
-      <Modal />
+      <Useeffect />
     </div>
   );
 }
