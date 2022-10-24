@@ -4,6 +4,7 @@ import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses';
 import Modal from './components/Modal/Modal';
 import Useeffect from './components/Modal/Useeffect'
+import Usereducer from './components/Modal/Usereducer'
 
 const DUMMY_EXPENSES = [
   {
@@ -49,7 +50,7 @@ const App = () => {
 
   return (
     <div>
-      <Useeffect />
+      <Usereducer />
     </div>
   );
 }

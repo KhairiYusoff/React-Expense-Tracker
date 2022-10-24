@@ -6,10 +6,10 @@ const Useeffect = () => {
     const [buttons, setButtons] = useState('posts')
 
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/posts')
+        fetch(`https://jsonplaceholder.typicode.com/${buttons}`)
             .then(res => res.json())
             .then(json => setItems(json))
-    }, [])
+    }, [buttons])
 
     return (
         <div>
@@ -17,6 +17,13 @@ const Useeffect = () => {
             <button onClick={() => setButtons('comments')}>Comments</button>
             <button onClick={() => setButtons('albums')}>Albums</button>
             <h1>{buttons}</h1>
+            {items.map(item =>
+                <div>
+                    <div>{item.title}</div>
+                    <div>{item.email}</div>
+                </div>
+
+            )}
         </div>
     )
 }
