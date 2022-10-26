@@ -5,6 +5,7 @@ import Expenses from './components/Expenses/Expenses';
 import Modal from './components/Modal/Modal';
 import Useeffect from './components/Modal/Useeffect'
 import Usereducer from './components/Modal/Usereducer'
+import Context from './components/Modal/Context';
 
 const DUMMY_EXPENSES = [
   {
@@ -50,7 +51,7 @@ const App = () => {
 
   return (
     <div>
-      <Usereducer />
+      <Context />
     </div>
   );
 }
