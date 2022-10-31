@@ -15,7 +15,7 @@ function App() {
         setError(null)
 
         try {
-            const response = await fetch('https://swapi.dev/api/films/')
+            const response = await fetch('https://react-http-8cea9-default-rtdb.asia-southeast1.firebasedatabase.app/movies.json')
 
             if (!response.ok) {
                 throw new Error('Something Went Wrong!')
@@ -41,8 +41,14 @@ function App() {
         fetchMoviesHandler()
     }, [fetchMoviesHandler])
 
-    function addMovieHandler(movie) {
-        console.log(movie)
+    async function addMovieHandler(movie) {
+        await fetch('https://react-http-8cea9-default-rtdb.asia-southeast1.firebasedatabase.app/movies.json', {
+            method: 'POST',
+            body: JSON.stringify(movie),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
     }
 
     let content = <p>No movies found.</p>
