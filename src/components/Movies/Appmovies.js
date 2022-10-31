@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect, useCallback } from 'react'
 import MoviesList from './MoviesList';
-import './App.css';
+import './Appmovies.css';
 
 function App() {
 
