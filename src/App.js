@@ -9,6 +9,7 @@ import Context from './components/Modal/Context';
 import ComponentA from './components/Modal/ComponentA'
 import Parent from './components/Modal/Parent';
 import Appmovies from './components/Movies/Appmovies';
+import AppCustom from './components/CustomHooks/AppCustom';
 
 const DUMMY_EXPENSES = [
   {
@@ -54,7 +55,7 @@ const App = () => {
 
   return (
     <div>
-      <Appmovies />
+      <AppCustom />
     </div>
   );
 }
