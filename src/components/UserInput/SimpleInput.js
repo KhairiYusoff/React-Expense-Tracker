@@ -5,7 +5,6 @@ import './Form.module.css'
 const SimpleInput = (props) => {
 
     const [enteredName, setEnteredName] = useState('')
-
     const [enteredNameTouched, setEnteredNameTouched] = useState(false)
 
     const enteredNameIsValid = enteredName.trim() !== ''
