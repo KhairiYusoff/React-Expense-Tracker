@@ -11,7 +11,8 @@ import Parent from './components/Modal/Parent';
 import Appmovies from './components/Movies/Appmovies';
 import AppCustom from './components/CustomHooks/AppCustom';
 import BasicForm2 from './components/UserInput/BasicForm2';
-import CounterTwo from './components/Reducer/CounterTwo';
+import CounterPracticeTwo from './components/Reducer/CounterPracticeTwo';
+import ReducerContext from './components/Reducer/ReducerContext'
 
 const DUMMY_EXPENSES = [
   {
@@ -57,7 +58,7 @@ const App = () => {
 
   return (
     <div>
-      <CounterTwo />
+      <ReducerContext />
     </div>
   );
 }
