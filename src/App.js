@@ -14,7 +14,7 @@ import BasicForm2 from './components/UserInput/BasicForm2';
 import CounterPracticeTwo from './components/Reducer/CounterPracticeTwo';
 import ReducerContext from './components/Reducer/ReducerContext'
 import SimpleInput from './components/UserInput/SimpleInput';
-import BasicForm from './components/UserInput/BasicForm'
+import BasicForm1 from './components/UserInput/BasicForm1'
 
 const DUMMY_EXPENSES = [
   {
@@ -60,7 +60,7 @@ const App = () => {
 
   return (
     <div>
-      <SimpleInput />
+      <BasicForm1 />
     </div>
   );
 }

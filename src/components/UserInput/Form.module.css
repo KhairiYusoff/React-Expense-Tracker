@@ -10,7 +10,12 @@ html {
 
 body {
   margin: 0;
-  background-color: #3f3f3f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .app {
@@ -108,4 +113,9 @@ button:disabled:active{
   color: #292929;
   border-color: #ccc;
   cursor: not-allowed;
+}
+
+input{
+  width: 100%;
+  margin-bottom: 5px;
 }
